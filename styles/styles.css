@@ -43,6 +43,7 @@ main {
     height: 80%;
     background-image: url(/assets/background-image.jpg);
     background-size: cover;
+    filter: brightness(50%);
 }
 
 .principal__conteudo {
@@ -61,5 +62,5 @@ main {
 .principal__conteudo__subtitulo {
     font-family: "Inter", sans-serif;
     color: #FFFFFF;
-    padding-left: 100px;
+    padding-left: 285px;
 }
