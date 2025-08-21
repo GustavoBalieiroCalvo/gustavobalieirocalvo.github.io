@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --cor-primaria: #00DEFF;
+    --cor-secundaria:#FFFFFF;
+    --cor-tercearia: #101212;
+}
 
 * {
     margin: 0px;
@@ -21,12 +26,19 @@ body {
     font-style: normal;
     font-size: 24px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--cor-secundaria);
 
-    background-color: #00DEFF;
-    background-image: linear-gradient(160deg, #101212 54%, #00DEFF);
+    background-color: var(--cor-primaria);
+    background-image: linear-gradient(160deg, #191b1b 54%, var(--cor-primaria));
 
 }
+
+/* .barra-navegacao:hover {
+
+    background-color: var(--cor-primaria);
+    background-image: linear-gradient(160deg, #101212 54%, var(--cor-primaria));
+
+} */
 
 .barra-navegacao__links {
     display: flex;
@@ -36,31 +48,95 @@ body {
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--cor-primaria);
 }
 
 main {
     height: 80%;
-    background-image: url(/assets/background-image.jpg);
+ /*    background-image: url(/assets/background-image.jpg); */
+    background-color: var(--cor-tercearia);
     background-size: cover;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+}   
+
+.principal {
+    display: flex;
+    padding: 10%;
 }
 
 .principal__conteudo {
     padding: 56px 0px 0px 76px;
-}
+} 
 
 .principal__conteudo__titulo {
     font-family: "Agdasima", sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 96px;
-    color: #00DEFF;
+    color: var(--cor-primaria);
     margin-bottom: -20px;
 }
 
 .principal__conteudo__subtitulo {
     font-family: "Inter", sans-serif;
-    color: #FFFFFF;
+    color: var(--cor-secundaria);
     padding-left: 285px;
 }
+
+.principal__conteudo__caixa-texto {
+    /* margin: 10% 15%; */
+    justify-content: left;
+   /*  display: flex */
+}
+
+.principal__conteudo__caixa-texto__texto {
+    font-family: "Inter", sans-serif;
+    color: var(--cor-secundaria);
+    margin:0;
+}
+
+.foto {
+    border-radius: 24px;
+    border: 2px solid var(--cor-primaria);
+}
+
+.logos {
+    height: 10%;
+
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+    margin: 480px 0px 0px 0px;
+
+    
+
+    align-items: center;
+
+    /* background-color: var(--cor-tercearia); */
+}
+
+#github, #linkedin, #instagram {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.rodape {
+    background-color: var(--cor-tercearia);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__caixa__conteudo {
+    font-family: "Inter", sans-serif;
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    text-align: center;
+
+
+}
+
+
