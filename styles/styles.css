@@ -102,15 +102,18 @@ h1 {
 
 .conteudo__primeiro {
     display: flex;
-    margin: 5.5rem 18rem 7.5rem 18rem;
+    margin: 2.5rem 20rem 9.5rem 20rem;
     gap: 8rem;
     align-items: center;
 
 }
 
 .conteudo__primeiro__apresentacao {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 
-
+    row-gap: 1rem;
 
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
@@ -120,14 +123,14 @@ h1 {
 
 .conteudo__primeiro__apresentacao__titulo {
     font-weight: 200;
-    font-size: 92px;
+    font-size: 106px;
     height: auto;
 }
 
 .conteudo__primeiro__apresentacao__paragrafo {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
 
 }
 
@@ -137,7 +140,7 @@ h1 {
 
 .conteudo__primeiro__apresentacao__caixa-img__img {
     border-radius: 4rem;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.548);
+    box-shadow: 10px 10px 25px rgba(26, 1, 68, 0.7);
 
 }
 
