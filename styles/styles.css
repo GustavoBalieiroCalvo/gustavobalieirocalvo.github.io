@@ -147,15 +147,45 @@ h1 {
 .conteudo__segundo {
     background-color: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items:start;
-
+    justify-content:start;
+    align-items:center;
+    flex-direction: column;
     height: 220rem;
+
+    color: #0a001b;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
+
 
 #aba-cima path {
     fill: #0a001b;
 }
+
+
+
+.conteudo__segundo__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 4rem;
+}
+
+.conteudo__segundo__projeto1 {
+    box-sizing: border-box;
+    display: flex;
+    margin: 10rem;
+}
+
+[class^="conteudo__segundo__projeto"] iframe {
+    box-sizing: border-box;
+    height: 400px !important; 
+    width: 30rem !important;
+    border-radius: 40px;
+
+ }
+
 
 /* #aba-baixo {
     fill: #0a001b;
